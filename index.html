@@ -16,20 +16,9 @@
     <title>To-Do-List</title>
 </head>
 <body>
-    <template>
-        <!-- <div class="container"> -->
-            <!-- <h1>My To-Do-List</h1>
-            <ul>
-                <li class="list"> X </li>
-                <li> Y </li>
-                <li> </li>
-            </ul>
 
-            <form name="f">
-                <input type="text" name="champ" placeholder="saisissez votre texte">
-                <input type="button" onClick="document.forms.f.submit()" value="valider">
-            </form> -->
-        <!-- </div>  -->
+    <template>
+
     </template>
 
     <style>
@@ -56,24 +45,22 @@
         document.open();
         document.write("<h1>My To-Do-List</h1>");
         document.write("<ol><li class=li> Xyz </li><li> Xzzeffrzfrf </li></ol>");
-        document.write("<form><input type=text name=champ placeholder= saisissez.votre.texte><input type=button onClick=document.forms.f.submit() value=valider></form>");
+        document.write("<form><input type=text name=champ placeholder= saisissez.votre.texte><input type=button onClick=document.forms.f.submit() value=valider><input type=button onClick=document.forms.f.submit() value=supprimer></form>");
         
         document.close();
         // }
+
+        // Tableau des tâches
+        let tasks = []
+        // Classe des tâches
+        class Task {
+        constructor(text) {
+            this.text = text
+            this.isComplete = false
+        }
+        }
     </script>
 
-<!-- 
-    <script>
-export default {
-  data() {
-    return {
-        container:"My To-Do-List"
-
-
-    }
-}
-}
-    </script> -->
 
 </body>
 </html>
