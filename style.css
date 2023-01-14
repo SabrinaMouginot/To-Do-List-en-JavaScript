@@ -3,13 +3,14 @@ body{
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 50px;
-    text-align: center;
+    /* text-align: center; */
 }
-li{
+
+/* li{
     color: rgb(52, 19, 129);
     font-style: italic;
     text-align: left;
-}
+} */
 
 .paper-btn, [type="button"] { 
     float: right;
