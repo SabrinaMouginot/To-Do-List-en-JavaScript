@@ -19,3 +19,10 @@ document.write("<input type=button value=modifier>&nbsp;<input type=button value
 //tableau des tâches
 var taches = []
 
+// Classe des tâches
+class taches {
+  constructor(text) {
+    this.text = text
+    this.isComplete = false
+  }
+}
