@@ -16,5 +16,6 @@ document.write("<input type=button value=modifier>&nbsp;<input type=button value
 
 // document.close();
 
-
+//tableau des tâches
+var taches = []
 
