@@ -15,3 +15,6 @@ document.write("<del>sortir les poubelles</del>");
 document.write("<input type=button value=modifier>&nbsp;<input type=button value=supprimer>");
 
 // document.close();
+
+
+
