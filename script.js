@@ -3,6 +3,7 @@ alert("chargement du nouveau contenu");
 document.write("<h1>Ma liste de tâches</h1>");
 // document.write("<ol><li class=li> Xyz </li><li> Xzzeffrzfrf </li></ol>");
 
+
 document.write("<input type=text name=champ placeholder= Nouvelle&nbsp;tâche>&nbsp;<input type=button value=valider>");
 
 
@@ -19,10 +20,10 @@ document.write("<input type=button value=modifier>&nbsp;<input type=button value
 //tableau des tâches
 var taches = []
 
-// Classe des tâches
+// Classe des tâches  >>>>>>>>>>>> Une classe pour instancier des tâches et un tableau pour les stocker.
 class taches {
   constructor(text) {
     this.text = text
     this.isComplete = false
   }
-}
+} 
