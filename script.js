@@ -35,12 +35,17 @@ let tasks = new Map()
 
 
 // Boutons
-const buttonDel = "<button class='supprimer'>Supprimer</button>"
-const buttonsComplete = "${buttonDel}<button class='demarquer'>Démarquer</button>"
-const buttonsNoComplete = "${buttonDel}<button class='marquer'>Marquer</button>"
-
+const buttonDel = '<button class="btn-small btn-danger">Supprimer</button>'
+const buttonsComplete = `
+  ${buttonDel}
+  <button class="btn-small demarquer">Démarquer</button>    
+` 
+const buttonsNoComplete = `
+  ${buttonDel}
+  <button class="btn-small marquer">Marquer</button> 
+`
 // Ajoute une ligne de tableau
-const createLine = (text, complete) => {
+const createLine = (text, complete) => {  
   // Création TR
   const tr = document.createElement('tr')  
   // Création premier TD avec le texte 
@@ -63,7 +68,7 @@ const createLine = (text, complete) => {
 // Sauvegarde en local storage
 const setStorage = () => localStorage.setItem('TASKS', JSON.stringify(Array.from(tasks)))
 
-//Quand on va entrer le texte de la tâche dans la zone de texte et appuyer sur la touche Entrée on met donc en place l’écoute de l’événement 
+//Quand on va entrer le texte de la tâche dans la zone de texte et appuyer sur la touche Entrée. Mise en place l’écoute de l’événement 
 
 // Ajout d'une tâche
 document.querySelector('input').addEventListener('keydown', e => {
