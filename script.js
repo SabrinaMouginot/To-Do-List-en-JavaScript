@@ -41,5 +41,16 @@ const buttonsNoComplete = "${buttonDel}<button class='marquer'>Marquer</button>"
 
 // Ajoute une ligne de tableau
 const creerLine = (text, complete) => {
-
+  // Création TR
+  const tr = document.createElement('tr')  
+  // Création premier TD avec le texte 
+  let td = document.createElement('td')
+  td.innerHTML = complete ? `<del>${text}</del>` : text
+  tr.appendChild(td)
+  // Création second TD avec les boutons
+  td = document.createElement('td')
+  td.innerHTML = complete ? buttonsComplete : buttonsNoComplete
+  tr.appendChild(td) 
+  // Retour du TR
+  return tr
 }
