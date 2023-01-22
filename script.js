@@ -29,7 +29,7 @@ document.write("<input class='modifier' type=button value=modifier>&nbsp;<input 
 // } 
 
 // Dictionnaire des tâches  >>>>>>>>>>>>>> Un dictionnaire est une collection de clés et valeurs qui peuvent être de n’importe quel type ce qui nous convient très bien.
-let taches = new Map()
+let tasks = new Map()
 //La seule chose qu’on ne pourra pas faire c’est modifier le texte de la tâche puisque c’est la clé. 
 
 
@@ -40,7 +40,7 @@ const buttonsComplete = "${buttonDel}<button class='demarquer'>Démarquer</butto
 const buttonsNoComplete = "${buttonDel}<button class='marquer'>Marquer</button>"
 
 // Ajoute une ligne de tableau
-const creerLine = (text, complete) => {
+const createLine = (text, complete) => {
   // Création TR
   const tr = document.createElement('tr')  
   // Création premier TD avec le texte 
@@ -58,3 +58,9 @@ const creerLine = (text, complete) => {
 //On manipule le DOM pour créer une ligne dans le tableau pour la tâche. Les nœuds sont créés avec createElement puis ajoutés avec appendChild. 
 //On tient compte de la valeur de complete qui nous informe si une tâche est marquée ou pas. La fonction retourne la nouvelle ligne. 
 //Pour les boutons j’ai créé quelques variables pour que le code soit plus lisible.
+
+
+// Sauvegarde en local storage
+const setStorage = () => localStorage.setItem('TASKS', JSON.stringify(Array.from(tasks)))
+
+//Quand on va entrer le texte de la tâche dans la zone de texte et appuyer sur la touche Entrée on met donc en place l’écoute de l’événement 
