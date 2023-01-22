@@ -104,6 +104,6 @@ document.querySelector('table').addEventListener('click', e => {
         //toggleTask(e.target.matches('.marquer'), e.target)
       }
       // Actualisation du local storage
-
+      setStorage() 
     }
 })
