@@ -54,3 +54,7 @@ const creerLine = (text, complete) => {
   // Retour du TR
   return tr
 }
+
+//On manipule le DOM pour créer une ligne dans le tableau pour la tâche. Les nœuds sont créés avec createElement puis ajoutés avec appendChild. 
+//On tient compte de la valeur de complete qui nous informe si une tâche est marquée ou pas. La fonction retourne la nouvelle ligne. 
+//Pour les boutons j’ai créé quelques variables pour que le code soit plus lisible.
