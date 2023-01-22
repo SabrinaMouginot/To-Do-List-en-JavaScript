@@ -89,6 +89,10 @@ document.querySelector('input').addEventListener('keydown', e => {
 // **********************************************************SUPPRIMER UNE TACHE *************************************************
 
 // Click dans la liste des tâches
+// On sait créer une tâche. On doit pouvoir aussi en supprimer une. On doit écouter les clics sur les boutons. Mais ça serait laborieux d’équiper tous les boutons d’un événement. On va plutôt écouter les clics de façon globale sur le tableau et ensuite vérifier plus précisément où a eu lieu le clic.
 document.querySelector('table').addEventListener('click', e => {
-
+    // On a cliqué sur un bouton
+    if(e.target.matches('button')) {
+      
+    }
 })
