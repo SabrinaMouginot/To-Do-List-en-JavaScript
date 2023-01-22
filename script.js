@@ -21,9 +21,13 @@ document.write("<input type=button value=modifier>&nbsp;<input type=button value
 var taches = []
 
 // Classe des tâches  >>>>>>>>>>>> Une classe pour instancier des tâches et un tableau pour les stocker.
-class taches {
-  constructor(text) {
-    this.text = text
-    this.isComplete = false
-  }
-} 
+// class taches {
+//   constructor(text) {
+//     this.text = text
+//     this.isComplete = false
+//   }
+// } 
+
+// Dictionnaire des tâches  >>>>>>>>>>>>>> Un dictionnaire est une collection de clés et valeurs qui peuvent être de n’importe quel type ce qui nous convient très bien.
+let taches = new Map()
+//La seule chose qu’on ne pourra pas faire c’est modifier le texte de la tâche puisque c’est la clé. On pourrait supprimer cette entrée et en créer une autre mais alors elle se retrouverait à la fin de la liste ce qui ne serait pas très judicieux.
