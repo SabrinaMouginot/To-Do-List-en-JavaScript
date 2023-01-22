@@ -17,6 +17,8 @@ document.write("<input class='modifier' type=button value=modifier>&nbsp;<input 
 
 // document.close();
 
+// *************************************************************LES DONNEES*******************************************************
+
 //tableau des tâches
 // let taches = []
 
@@ -28,11 +30,13 @@ document.write("<input class='modifier' type=button value=modifier>&nbsp;<input 
 //   }
 // } 
 
+
+
 // Dictionnaire des tâches  >>>>>>>>>>>>>> Un dictionnaire est une collection de clés et valeurs qui peuvent être de n’importe quel type ce qui nous convient très bien.
 let tasks = new Map()
 //La seule chose qu’on ne pourra pas faire c’est modifier le texte de la tâche puisque c’est la clé. 
 
-
+// **********************************************************AJOUTER UNE TACHE *************************************************
 
 // Boutons
 const buttonDel = '<button class="btn-small btn-danger">Supprimer</button>'
@@ -80,4 +84,11 @@ document.querySelector('input').addEventListener('keydown', e => {
     // Actualisation du local storage
     setStorage() 
   }
+})
+
+// **********************************************************SUPPRIMER UNE TACHE *************************************************
+
+// Click dans la liste des tâches
+document.querySelector('table').addEventListener('click', e => {
+
 })
