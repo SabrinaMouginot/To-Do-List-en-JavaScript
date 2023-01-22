@@ -107,3 +107,15 @@ document.querySelector('table').addEventListener('click', e => {
       setStorage() 
     }
 })
+
+//On détermine si c’est un bouton qui a été cliqué avec un test du tag. Si c’est un bouton de suppression on va chercher le texte correspondant de la tâche et on sait que c’est une clé du dictionnaire: 
+// donc il faut utiliser la méthode delete pour la supprimer de ce dictionnaire. 
+// le parcours du DOM :
+  // target : c’est le bouton
+  // target.parentNode : c’est le td dans lequel est le bouton
+  // target.parentNode.previousSibling : c’est le td qui est juste avant le td dans lequel est le bouton
+  // target.parentNode.previousSibling.textContent : c’est le texte qui est dans le td qui est juste avant le td dans lequel est le bouton
+// On voit ensuite qu’on actualise le DOM en supprimant la ligne. On navigue un peu :
+  // target : c’est le bouton
+  // target.parentNode : c’est le td dans lequel est le bouton
+  // target.parentNode.parentNode : c’est le tr qui contient la lig
