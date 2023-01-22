@@ -98,7 +98,7 @@ document.querySelector('table').addEventListener('click', e => {
         // Suppression dans le dictionnaire
         tasks.delete(e.target.parentNode.previousSibling.textContent)
         // Suppression dans le DOM
-
+        e.target.parentNode.parentNode.remove()
       // Marquage d'une tâche
       } else {
         //toggleTask(e.target.matches('.marquer'), e.target)
