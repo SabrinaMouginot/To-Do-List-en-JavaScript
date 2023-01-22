@@ -64,3 +64,15 @@ const createLine = (text, complete) => {
 const setStorage = () => localStorage.setItem('TASKS', JSON.stringify(Array.from(tasks)))
 
 //Quand on va entrer le texte de la tâche dans la zone de texte et appuyer sur la touche Entrée on met donc en place l’écoute de l’événement 
+
+// Ajout d'une tâche
+document.querySelector('input').addEventListener('keydown', e => {
+  if(e.key === 'Enter')  {
+    // On ajoute la tâche dans le dictionnaire
+    tasks.set(e.target.value, false)  
+    // On ajoute la ligne dans le tableau
+    document.querySelector('tbody').appendChild(createLine(e.target.value, false))
+    // Actualisation du local storage
+    setStorage() 
+  }
+})
