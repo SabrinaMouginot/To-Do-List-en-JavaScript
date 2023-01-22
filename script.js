@@ -93,6 +93,17 @@ document.querySelector('input').addEventListener('keydown', e => {
 document.querySelector('table').addEventListener('click', e => {
     // On a cliqué sur un bouton
     if(e.target.matches('button')) {
-      
+      // Suppression d'une tâche
+      if(e.target.matches('.btn-danger')) {
+        // Suppression dans le dictionnaire
+        tasks.delete(e.target.parentNode.previousSibling.textContent)
+        // Suppression dans le DOM
+
+      // Marquage d'une tâche
+      } else {
+        //toggleTask(e.target.matches('.marquer'), e.target)
+      }
+      // Actualisation du local storage
+
     }
 })
