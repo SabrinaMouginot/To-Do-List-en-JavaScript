@@ -119,3 +119,15 @@ document.querySelector('table').addEventListener('click', e => {
   // target : c’est le bouton
   // target.parentNode : c’est le td dans lequel est le bouton
   // target.parentNode.parentNode : c’est le tr qui contient la lig
+
+// ********************************************************** COMMUTER UNE TACHE *************************************************
+
+
+
+// ********************************************************** CHARGEMENT DE LA PAGE **********************************************
+
+
+
+// ************************************************************ ON EMPAQUETTE ***************************************************
+
+
