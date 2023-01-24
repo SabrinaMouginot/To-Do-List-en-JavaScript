@@ -130,7 +130,7 @@ const toggleTask = (complete, target) => {
   // Mise à jour du dictionnaire
   tasks.set(text, complete)
   // Changement du bouton
-
+  parent.innerHTML = complete ? buttonsComplete : buttonsNoComplete
   // Barrage du texte
 
 }
