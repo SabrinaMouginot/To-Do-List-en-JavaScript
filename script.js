@@ -122,7 +122,18 @@ document.querySelector('table').addEventListener('click', e => {
 
 // ********************************************************** COMMUTER UNE TACHE *************************************************
 
+// Commutation tâche
+const toggleTask = (complete, target) => {
+  const parent = target.parentNode
+  const sibling = parent.previousSibling
+  const text = sibling.textContent
+  // Mise à jour du dictionnaire
 
+  // Changement du bouton
+
+  // Barrage du texte
+
+}
 
 // ********************************************************** CHARGEMENT DE LA PAGE **********************************************
 
