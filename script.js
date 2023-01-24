@@ -101,7 +101,7 @@ document.querySelector('table').addEventListener('click', e => {
         e.target.parentNode.parentNode.remove()
       // Marquage d'une tâche
       } else {
-        //toggleTask(e.target.matches('.marquer'), e.target)
+        toggleTask(e.target.matches('.marquer'), e.target)
       }
       // Actualisation du local storage
       setStorage() 
