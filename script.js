@@ -128,7 +128,7 @@ const toggleTask = (complete, target) => {
   const sibling = parent.previousSibling
   const text = sibling.textContent
   // Mise à jour du dictionnaire
-
+  tasks.set(text, complete)
   // Changement du bouton
 
   // Barrage du texte
