@@ -132,7 +132,7 @@ const toggleTask = (complete, target) => {
   // Changement du bouton
   parent.innerHTML = complete ? buttonsComplete : buttonsNoComplete
   // Barrage du texte
-
+  sibling.innerHTML = complete ? `<del>${text}</del>` : text
 }
 
 // ********************************************************** CHARGEMENT DE LA PAGE **********************************************
