@@ -134,6 +134,9 @@ const toggleTask = (complete, target) => {
   // Barrage du texte
   sibling.innerHTML = complete ? `<del>${text}</del>` : text
 }
+// 1) on met à jour le dictionnaire en changeant la valeur.
+// 2) on change le bouton.
+// 3) on barre (ou débarre) le texte.
 
 // ********************************************************** CHARGEMENT DE LA PAGE **********************************************
 
