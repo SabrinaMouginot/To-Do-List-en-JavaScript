@@ -155,6 +155,8 @@ window.addEventListener('load', () =>  {
 })
 
 // Ici, on ne perd pas nos données, elle restent dans le navigateur et ressortent quand on en a besoin.
+// J'ai utilisé la méthose map plutôt qu'une boucle For.
+// Autre point : le DOM est modifié une seule fois pour assurer une bonne performance. A mon avis, il ne serait pas judicieux de remplir ligne par ligne.
 
 // ************************************************************ ON EMPAQUETTE ***************************************************
 
