@@ -140,7 +140,16 @@ const toggleTask = (complete, target) => {
 
 // ********************************************************** CHARGEMENT DE LA PAGE **********************************************
 
+// Chargement de la page
+window.addEventListener('load', () =>  {
+  // Récupération du local storage
 
+    // Création du dictionnaire
+
+    // Raffraichissement de la liste
+
+  }
+})
 
 // ************************************************************ ON EMPAQUETTE ***************************************************
 
