@@ -146,9 +146,11 @@ window.addEventListener('load', () =>  {
   const storage = JSON.parse(localStorage.getItem('TASKS'))
   if(storage) {
     // Création du dictionnaire
-
+    tasks = new Map(storage)
     // Raffraichissement de la liste
-
+    const tbody = document.createElement('tbody') 
+    storage.map(([text, complete]) => tbody.appendChild(createLine(text, complete)))
+    document.querySelector('tbody').replaceWith(tbody)
   }
 })
 
