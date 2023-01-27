@@ -162,5 +162,5 @@ window.addEventListener('load', () =>  {
 
 // A cette étape, la To-Do-List est fonctionnelle. 
 // Je vais utiliser Parcel pour le déploiement. 
-// Pour la suite, je me suis intéressée à la documentation sur Array.prototype.sort() 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+// A lire sur Parcel: https://codaholic.sillo.org/2020/01/02/maitriser-javascript-quelques-outils/
+// A lire sur Array.prototype.sort() : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
