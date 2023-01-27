@@ -143,7 +143,8 @@ const toggleTask = (complete, target) => {
 // Chargement de la page
 window.addEventListener('load', () =>  {
   // Récupération du local storage
-
+  const storage = JSON.parse(localStorage.getItem('TASKS'))
+  if(storage) {
     // Création du dictionnaire
 
     // Raffraichissement de la liste
