@@ -154,6 +154,8 @@ window.addEventListener('load', () =>  {
   }
 })
 
+// Ici, on ne perd pas nos données, elle restent dans le navigateur et ressortent quand on en a besoin.
+
 // ************************************************************ ON EMPAQUETTE ***************************************************
 
 
